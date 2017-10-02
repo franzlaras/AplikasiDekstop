@@ -11,12 +11,10 @@ package id.co.indocyber.swing;
  */
 public class IncrementApp extends javax.swing.JFrame {
 
-    /**
-     * Creates new form IncrementApp
-     */
+ 
+    int kamar;
     
-    
-    int jumlahKilk = 0;
+    int jumlahKilk = 10;
     
     public IncrementApp() {
         initComponents();
@@ -40,7 +38,7 @@ public class IncrementApp extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        clickButton.setText("Click Me!");
+        clickButton.setText("klik disini");
         clickButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clickButtonActionPerformed(evt);
@@ -72,10 +70,6 @@ public class IncrementApp extends javax.swing.JFrame {
                 .addComponent(jumlahKlikLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(169, 169, 169)
-                .addComponent(clickButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(173, 173, 173)
                 .addComponent(GreatBtn)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -88,6 +82,10 @@ public class IncrementApp extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(KolomNama, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(43, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(clickButton)
+                .addGap(174, 174, 174))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
